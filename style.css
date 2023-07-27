@@ -1,0 +1,156 @@
+:root{
+    --f-p : 'Poppins';
+    --f-r : 'roboto' ;
+
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/*background*/
+.container{
+    background: url('assets/background\ \(1\).png');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+}
+nav{
+    position: sticky;
+    top: 0;
+
+
+}
+ul{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+li{
+    display: flex;
+    text-align: center;
+
+}
+a{
+ text-decoration: none;
+ color: white;
+ font-family: var(--f-r);
+ gap: 39px;
+ padding: 10px;
+ text-align: center;
+}
+a:hover{
+    transform: scale(1.2);
+    color:darkorange;
+}
+.title{
+
+    justify-content:center;
+    color: darkorange;
+font-family: var(--f-r); 
+text-transform: uppercase;
+font-size: 70px;
+margin-bottom: -10px;
+}
+h1{
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+p{
+    color: white;
+    font-family: var(--f-p);
+    font-size: 20px;
+    margin-top: -3px;
+   
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 8% 2%;
+}
+.btn{
+    width: max-content;
+    color: white;
+    background-color: darkorange;
+    border-radius: 30px;
+ border: 2px solid black;
+ padding: 10px 30px;
+ font-family: var(--f-r);
+ text-transform: uppercase;
+ cursor: pointer;
+ transition: 0.2s ease;
+}
+.btn:hover{
+    color:darkorange;
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.coin-list{
+    display: flex;
+    align-items: center;
+    bottom: 90px;
+    right: 10%;
+    position: absolute;
+    cursor: pointer;
+
+}
+.coin:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+.coin{
+    display: flex;
+    align-items: center;font-size: 14px;
+    margin: 0 15px;
+    color: darkorange;
+    border: 2px solid white;
+    border-radius: 28px;
+    padding: 10px 20px;
+    transition: 0.2s ease;
+}
+.coin img{
+    width: 40px;
+    margin-right: 10px;
+    cursor: no-drop;
+}
+.coin p{
+    color: darkorange;
+}
+
+@media screen and (max-width:680px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        padding: 1% 0%;
+    }
+    .coin-list{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: -390px;
+       margin-top: 30%;
+       right: 0%;
+    }
+    .coin{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        font-size: 14px;
+        color: darkorange;
+        border: 2px solid white;
+        border-radius: 28px;
+        margin-top: 70%;
+    
+    }
+}
